@@ -1,0 +1,45 @@
+<br>
+<div class="card " style="margin-left: 40px;margin-right: 20px;">
+    <div class="card-header " style="color: white;background-color: rgb(34, 34, 148);">
+     <h4>Circulars</h4>
+    </div>
+    <div class="card-body yes">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" style="color:black;" data-toggle="tab" href="#home"><strong>Recent</strong> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#menu1"><strong>Academic</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"style="color:black;" data-toggle="tab" href="#menu2"><strong>Events</strong></a>
+              </li>
+            </ul>
+          
+            <!-- Tab panes -->
+            <div class="tab-content" style="font-family: Arial, Helvetica, sans-serif;">
+              <div id="home" class="tab-pane active"><br>
+                <ul  style="line-height:240%" > 
+                  <li   *ngFor="let str1 of circ1">{{str1}}</li>
+                </ul>
+              </div>
+              <div id="menu1" class=" tab-pane fade"><br>
+                <ul  style="line-height:240%" > 
+                  <li   *ngFor="let str2 of circ2">{{str2}}</li>
+                </ul>
+              </div> 
+              <div id="menu2" class=" tab-pane fade"><br>
+                <ul  style="line-height:240%" > 
+                  <li   *ngFor="let str3 of circ3">{{str3}}</li>
+                </ul>
+            </div>
+                 
+    </div>
+    
+    <div class="card-footer text-muted">
+      10 days ago
+    </div>
+  </div>
+
+ 
